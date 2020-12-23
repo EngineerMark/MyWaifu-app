@@ -4,6 +4,7 @@
     <list default="true" id="7a58e92e-7d50-49f8-b932-111aa68245c2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MyWaifu-app/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MyWaifu-app/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Code/Waifu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/Waifu.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/WaifuAPI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/WaifuAPI.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,8 +22,8 @@
       <option value="$PROJECT_DIR$/Assets/Code/API.cs" />
       <option value="$PROJECT_DIR$/Assets/Code/JSONHelper.cs" />
       <option value="$PROJECT_DIR$/Assets/Code/AppManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/Code/WaifuAPI.cs" />
       <option value="$PROJECT_DIR$/Assets/Code/Waifu.cs" />
+      <option value="$PROJECT_DIR$/Assets/Code/WaifuAPI.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1m1mhmLduty0QZfOLUsf7P6Z6zY" />
@@ -52,7 +53,7 @@
       <option name="presentableId" value="Default" />
       <updated>1608669598649</updated>
       <workItem from="1608669608368" duration="1460000" />
-      <workItem from="1608725988989" duration="4469000" />
+      <workItem from="1608725988989" duration="5269000" />
     </task>
     <servers />
   </component>

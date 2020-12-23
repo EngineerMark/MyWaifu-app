@@ -19,7 +19,10 @@ namespace Assets.Code
             return returnValue;
         }
     }
-
+    
+    /// <summary>
+    /// Classes using this interface are created based on API results and require further assistance to finish building objects
+    /// </summary>
     public interface IWaifuApiObject
     {
         /// <summary>

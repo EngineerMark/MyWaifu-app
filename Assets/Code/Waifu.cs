@@ -72,15 +72,15 @@ namespace Assets.Code
         [JsonProperty("gender")]
         public string Gender { get; private set; }
 #endregion
-        
-        public bool data_exists = false;
+
+        public bool DataExists { get; set; } = false;
 
         public event EventHandler DataReceived;
 
         public void GetData()
         {
             Waifu newWaifu = WaifuAPI.ApiCall<Waifu>("https://www.mywaifu.net/api.php?type=waifudata&q="+ID);
-            newWaifu.data_exists = true;
+            newWaifu.DataExists = true;
             //TODO: Apply all new data to existing object in a graceful manner, we want it to be expandable without too much hassle
         }
 
