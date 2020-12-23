@@ -19,15 +19,4 @@ namespace Assets.Code
             return returnValue;
         }
     }
-    
-    /// <summary>
-    /// Classes using this interface are created based on API results and require further assistance to finish building objects
-    /// </summary>
-    public interface IWaifuApiObject
-    {
-        /// <summary>
-        /// In case of unfinished data contents, use this to fetch all data for object
-        /// </summary>
-        void GetData();
-    }
 }
