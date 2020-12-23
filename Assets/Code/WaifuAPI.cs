@@ -9,7 +9,7 @@ namespace Assets.Code
 {
     public static class WaifuAPI
     {
-        public static T TestApi<T>(string url)
+        public static T ApiCall<T>(string url)
         {
             HttpWebRequest request = (HttpWebRequest)WebRequest.Create(String.Format(url));
             HttpWebResponse response = (HttpWebResponse)request.GetResponse();
@@ -18,5 +18,13 @@ namespace Assets.Code
             T returnValue = JsonConvert.DeserializeObject<T>(jsonResponse);
             return returnValue;
         }
+    }
+
+    public interface IWaifuApiObject
+    {
+        /// <summary>
+        /// In case of unfinished data contents, use this to fetch all data for object
+        /// </summary>
+        void GetData();
     }
 }
