@@ -59,6 +59,7 @@ namespace Assets.Code
             GameObject go = Instantiate(waifuPanelPrefab);
             go.transform.SetParent(waifuSearchGroup.transform);
             go.transform.localScale = Vector3.one;
+            go.name = "SearchResult_"+waifu.Name;
 
             WaifuDisplayPanel wdp = go.GetComponent<WaifuDisplayPanel>();
             wdp.AttachWaifu(waifu);
