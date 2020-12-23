@@ -16,11 +16,13 @@ namespace Assets.Code
 
         [SerializeField]
         private Waifu attachedWaifu;
+
+        private Coroutine textureLoader;
     
         public void SetImage(string url)
         {
             panelImageField.preserveAspect = true;
-            StartCoroutine(InternalSetImage(url));
+            textureLoader = StartCoroutine(InternalSetImage(url));
         }
 
         private IEnumerator InternalSetImage(string url)

@@ -519,7 +519,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 425370671}
   m_Direction: 0
   m_Value: 0
-  m_Size: 0.9999996
+  m_Size: 0.9999997
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -898,8 +898,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.0026855469, y: 464.3}
-  m_SizeDelta: {x: -0.0048828125, y: -928.6847}
+  m_AnchoredPosition: {x: 0.0026855469, y: 475.69882}
+  m_SizeDelta: {x: -0.0048828125, y: -951.48236}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &647166387
 MonoBehaviour:
@@ -1461,8 +1461,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.0024414062, y: -40.020996}
-  m_SizeDelta: {x: -1.3967285, y: -79.35779}
+  m_AnchoredPosition: {x: 0.0024414062, y: -28.79303}
+  m_SizeDelta: {x: -1.3967285, y: -56.90265}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1217744014
 MonoBehaviour:
@@ -1483,7 +1483,7 @@ MonoBehaviour:
   m_Elasticity: 0.1
   m_Inertia: 1
   m_DecelerationRate: 0.135
-  m_ScrollSensitivity: 1
+  m_ScrollSensitivity: 64
   m_Viewport: {fileID: 964536586}
   m_HorizontalScrollbar: {fileID: 498869994}
   m_VerticalScrollbar: {fileID: 216760200}
@@ -1507,7 +1507,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
