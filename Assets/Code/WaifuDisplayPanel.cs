@@ -1,4 +1,6 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
+using System.IO;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Networking;
@@ -27,10 +29,41 @@ namespace Assets.Code
 
         private IEnumerator InternalSetImage(string url)
         {
-            UnityWebRequest www = UnityWebRequestTexture.GetTexture(url);
-            yield return www.SendWebRequest();
+            byte[] urlBytes = System.Text.Encoding.UTF8.GetBytes(attachedWaifu.ID+attachedWaifu.Name);
+            string path = Path.Combine(Application.persistentDataPath, "cache", "textures");
+            string file = Path.Combine(path, BitConverter.ToString(urlBytes).Replace("-", "")+".cache");
+            Directory.CreateDirectory(path);
+            Debug.Log(file);
 
-            panelImageField.sprite = SpriteFromTexture2D(((DownloadHandlerTexture) www.downloadHandler).texture);
+            //TODO: Check if file is cached and its age
+            Texture2D result = new Texture2D(2,2);
+            bool useCache = File.Exists(file) && ((DateTime.Now - File.GetCreationTime(file)).Hours<2);
+
+            if (!useCache)
+            {
+                UnityWebRequest www = UnityWebRequestTexture.GetTexture(url);
+                yield return www.SendWebRequest();
+                result = ((DownloadHandlerTexture) www.downloadHandler).texture;
+                result.Apply(true);
+
+                if (File.Exists(file))
+                    File.Delete(file);
+
+                using (FileStream fs = File.Create(file))
+                {
+                    byte[] texData = www.downloadHandler.data;
+                    fs.Write(texData, 0, texData.Length);
+                }
+            }
+            else
+            {
+                var fileData = File.ReadAllBytes(file);
+                result.LoadImage(fileData);
+                result.Apply(true);
+            }
+            
+            Sprite sprite = SpriteFromTexture2D(result);
+            panelImageField.sprite = sprite;
         }
 
         public void SetName(string text)
