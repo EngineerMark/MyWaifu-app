@@ -181,6 +181,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   panelImageField: {fileID: 6790679107614911884}
   panelNameField: {fileID: 2987675731258629813}
+  button: {fileID: 3287574733755820278}
 --- !u!114 &3287574733755820278
 MonoBehaviour:
   m_ObjectHideFlags: 0

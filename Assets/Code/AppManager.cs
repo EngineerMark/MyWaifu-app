@@ -14,9 +14,14 @@ namespace Assets.Code
 
         [SerializeField]
         private GameObject waifuPanelPrefab;
-        void Start()
+
+        [Header("Waifu Viewer")] [SerializeField]
+        private WaifuViewer viewer;
+
+        private void Update()
         {
-            
+            if (Input.GetKeyDown(KeyCode.Escape) && viewer.gameObject.activeInHierarchy)
+                viewer.Disable();
         }
 
         public void WaifuSearchInputFinished()
@@ -65,6 +70,13 @@ namespace Assets.Code
             wdp.AttachWaifu(waifu);
             wdp.SetName(waifu.Name);
             wdp.SetImage(waifu.Thumbnail);
+
+            wdp.Button.onClick.AddListener(delegate
+            {
+                viewer.Set(wdp);
+                viewer.Enable();
+            });
+            
             return go;
         }
     }

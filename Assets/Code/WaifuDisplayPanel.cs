@@ -10,17 +10,16 @@ namespace Assets.Code
 {
     public class WaifuDisplayPanel : MonoBehaviour
     {
-        [SerializeField]
-        private Image panelImageField;
-    
-        [SerializeField]
-        private TMP_Text panelNameField;
-
-        [SerializeField]
-        private Waifu attachedWaifu;
+        [SerializeField] private Image panelImageField;
+        [SerializeField] private TMP_Text panelNameField;
+        [SerializeField] private Waifu attachedWaifu;
+        [SerializeField] private Button button;
 
         private Coroutine textureLoader;
-    
+
+        public Image PanelImageField => panelImageField;
+        public Button Button => button;
+
         public void SetImage(string url)
         {
             panelImageField.preserveAspect = true;

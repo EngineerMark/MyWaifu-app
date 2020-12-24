@@ -11,6 +11,7 @@
           <e p="Waifu.cs" t="Include" />
           <e p="WaifuAPI.cs" t="Include" />
           <e p="WaifuDisplayPanel.cs" t="Include" />
+          <e p="WaifuViewer.cs" t="Include" />
         </e>
         <e p="JsonDotNet" t="Include">
           <e p="link.xml" t="Include" />
