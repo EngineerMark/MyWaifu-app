@@ -16,10 +16,11 @@ namespace Assets.Code
         [SerializeField] private Button button;
 
         private Coroutine textureLoader;
-        public Coroutine TextureLoader { get; }
+        public Coroutine TextureLoader => textureLoader;
 
         public Image PanelImageField => panelImageField;
         public Button Button => button;
+        public Waifu AttachedWaifu => attachedWaifu;
 
         public void SetImage(string url)
         {
