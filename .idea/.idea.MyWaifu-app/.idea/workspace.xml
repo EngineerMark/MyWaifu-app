@@ -5,7 +5,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MyWaifu-app/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MyWaifu-app/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Code/WaifuDisplayPanel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/WaifuDisplayPanel.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Code/WaifuViewer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/WaifuViewer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Fonts/Segoe UI SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fonts/Segoe UI SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/WaifuPanel.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/WaifuPanel.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -64,7 +64,9 @@
       <workItem from="1608763894801" duration="1383000" />
       <workItem from="1608819291751" duration="3526000" />
       <workItem from="1608843994489" duration="1826000" />
-      <workItem from="1608909156932" duration="1506000" />
+      <workItem from="1608909156932" duration="1556000" />
+      <workItem from="1608915193372" duration="584000" />
+      <workItem from="1608923197981" duration="304000" />
     </task>
     <servers />
   </component>

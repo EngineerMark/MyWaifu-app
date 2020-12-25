@@ -15,6 +15,9 @@ namespace Assets.Code
         [SerializeField] private Waifu attachedWaifu;
         [SerializeField] private Button button;
 
+        private Texture2D texture;
+        public Texture2D Texture => texture;
+
         private Coroutine textureLoader;
         public Coroutine TextureLoader => textureLoader;
 
@@ -62,9 +65,16 @@ namespace Assets.Code
                 result.LoadImage(fileData);
                 result.Apply(true);
             }
-            
-            Sprite sprite = SpriteFromTexture2D(result);
+
+            texture = result;
+            Sprite sprite = SpriteFromTexture2D(texture);
             panelImageField.sprite = sprite;
+
+            AspectRatioFitter arf = panelImageField.GetComponent<AspectRatioFitter>();
+            if (texture.width > texture.height)
+                arf.aspectRatio = 100f;
+            else
+                arf.aspectRatio = 0.001f;
         }
 
         public void SetName(string text)
