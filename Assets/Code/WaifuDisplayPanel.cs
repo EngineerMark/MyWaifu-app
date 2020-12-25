@@ -16,6 +16,7 @@ namespace Assets.Code
         [SerializeField] private Button button;
 
         private Coroutine textureLoader;
+        public Coroutine TextureLoader { get; }
 
         public Image PanelImageField => panelImageField;
         public Button Button => button;

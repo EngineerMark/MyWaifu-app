@@ -4,6 +4,9 @@ using UnityEngine;
 
 namespace Assets.Code
 {
+    /// <summary>
+    /// Class which hold small amount of information in case not all data is required
+    /// </summary>
     public struct WaifuResponse
     {
         public int id;

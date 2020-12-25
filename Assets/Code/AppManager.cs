@@ -46,10 +46,14 @@ namespace Assets.Code
         public void BuildWaifuSearchResult(List<Waifu> waifus)
         {
             //Clear out existing results
-            Transform[] children = waifuSearchGroup.transform.GetComponentsInChildren<Transform>(true);
-            foreach (Transform child in children)
-                if(child!=waifuSearchGroup.transform)
+            WaifuDisplayPanel[] children = waifuSearchGroup.transform.GetComponentsInChildren<WaifuDisplayPanel>(true);
+            foreach (WaifuDisplayPanel child in children)
+                if (child.transform != waifuSearchGroup.transform)
+                {
+                    if (child.TextureLoader != null)
+                        StopCoroutine(child.TextureLoader);
                     Destroy(child.gameObject);
+                }
 
             //Fill in results
             foreach (Waifu waifu in waifus)

@@ -4,6 +4,7 @@
     <e p="C:\Users\Eigenaar\AppData\Local\JetBrains\Rider2020.3\extResources" t="IncludeRecursive" />
     <e p="C:\Users\Eigenaar\AppData\Local\JetBrains\Rider2020.3\resharper-host\Local\Transient\Rider\v203\SolutionCaches\_MyWaifu-app.-1600568696.00" t="ExcludeRecursive" />
     <e p="D:\Projects\MyWaifu-app" t="IncludeRecursive">
+      <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Code" t="Include">
@@ -45,6 +46,26 @@
           </e>
           <e p="Sprites" t="Include">
             <e p="EmojiOne Attribution.txt" t="Include" />
+          </e>
+        </e>
+        <e p="UITween" t="Include">
+          <e p="Editor" t="Include">
+            <e p="EditorUITween.cs" t="Include" />
+          </e>
+          <e p="Prefabs" t="Include">
+            <e p="Click Effect Pref" t="Include">
+              <e p="ClickedWaveAnimation.cs" t="Include" />
+            </e>
+          </e>
+          <e p="ScenesExamplesScripts" t="Include">
+            <e p="ActivateOnEnable.cs" t="Include" />
+            <e p="CreateAnimImage.cs" t="Include" />
+            <e p="FollowClick.cs" t="Include" />
+          </e>
+          <e p="Scripts" t="Include">
+            <e p="EasyTween.cs" t="Include" />
+            <e p="ReferencedFrom.cs" t="Include" />
+            <e p="UITween.cs" t="Include" />
           </e>
         </e>
       </e>
